@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+    --gradiente: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    --gradiente-escuro: linear-gradient(90deg, #0f172a, #0a0f1c);
+}
+
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu{
+    display: flex; /*Flex para ficar um do lado do outro*/
+    list-style: none; /*Remove os pontos da lista*/
+    gap: 3rem; /*Espaçamento entre os itens do menu*/
+    justify-content: center; /*Centraliza os itens do menu*/
+}
+
+
+
+.menu-link {
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    color: var(--claro); /*Cor do texto dos links*/
+    font-weight: 500; /*Deixa o texto mais grosso*/
+    position: relative;
+    padding: 0.5rem;
+}
+
+.menu-link::after {
+    content: ''; /*Obrigatório colocar*/
+    height: 0.2rem;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 300ms ease-in-out; 
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex; /*Flex para alinhar os itens*/
+    justify-content: center; /*Centraliza os itens*/
+    align-items: center; /*Alinha os itens verticalmente*/
+    flex-direction: column; /*Coloca os itens em coluna*/
+}
+
+.foto-perfil {
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 0 2rem rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 0.4rem solid var(--vidro);
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.cabecalho-sub-titulo {
+    font-size: 1.5rem;
+    color: var(--claro);
+}
