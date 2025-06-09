@@ -93,3 +93,79 @@ h1 {
     font-size: 1.5rem;
     color: var(--claro);
 }
+
+.sobre {
+    padding: 6rem 2rem;
+
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 80rem;
+    margin: 0 auto; /*Centraliza a caixa*/
+    border-radius: 1.6rem;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px); /*Desfoque do fundo*/
+    background: rgba(255, 255, 255, 0.05);
+
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.projetos {
+    padding: 6rem 2rem;
+}
+
+.projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 1rem 2rem rgba(79, 70, 229, 0.2);
+    transform: translateY(-1rem) scale(1.03); /*Efeito de hover no titulo dos projetos*/
+    
+}
+
+.projetos-caixa {
+    display: grid; /*Organiza os cards em grid*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*Cria colunas que se repetem, utilizanod o "repeat". O "auto-fit" faz com que as colunas se ajustem automaticamente ao tamanho disponivel. E o "minmax" define o tamanho minimo que devem ocupar (300px) e o máximo (1fr, que corresponde a 1 fração de espaço disponível).*/
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.6rem;
+    backdrop-filter: blur(5px); /*Desfoque do fundo*/
+    border: 1px solid var(--vidro);
+    overflow: hidden; /*Esconde o que ultrapassar o card*/
+    transition: all 400ms ease;
+    cursor: pointer; /*Muda o cursor para a mãozinha quando passar por cima do card*/
+}
+
+.projetos-imagem {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover; /*Cobre todo o espaço do card*/
+}
+
+.info-projetos {
+
+}
+
+.paragrafo-projetos {
+
+}
