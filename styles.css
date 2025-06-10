@@ -25,6 +25,11 @@ body {
     color: var(--claro);
 }
 
+a {
+    color: var(--claro);
+    text-decoration: none;
+}
+
 .navegacao {
     position: fixed;
     top: 0;
@@ -165,6 +170,24 @@ h1 {
     width: 100%;
     object-fit: cover; /*Cobre todo o espaço do card*/
     transition: 400ms all ease;
+}
+
+.projeto-link-pagina {
+    margin-top: 0.7rem;
+    text-align: center;
+    cursor: pointer;
+    width: 9rem;
+    left: 0;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    border-radius: 1.3rem;
+    backdrop-filter: blur(5px); /*Desfoque do fundo*/
+    border: 1px solid var(--vidro);
+    padding: 0.5rem;
+    transition: all 400ms ease;
+}
+
+.projeto-link-pagina:hover {
+    transform: scale(1.05);
 }
 
 .info-projetos {
