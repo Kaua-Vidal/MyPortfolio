@@ -50,7 +50,7 @@ Desenvolvido por **Kauã Vidal de Souza**
 Estudante de Ciência da Computação - UFPB (Campus IV)
 
 - GitHub: [@Kaua-Vidal](https://github.com/Kaua-Vidal)
-- LinkedIn: [Seu LinkedIn aqui, se tiver]
+- LinkedIn: [Kauã Vidal](https://www.linkedin.com/in/kau%C3%A3-vidal-153774242/)
 
 ## 📄 Licença
 
