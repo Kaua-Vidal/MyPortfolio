@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido com o
 
 ## 📸 Demonstração
 
-🔗 Acesse online: [https://kaua-vidal.github.io/MyPortfolio/](https://portfolio-kaua-vidal.netlify.app/)
+🔗 Acesse online: [Meu Portifólio](https://portfolio-kaua-vidal.netlify.app/)
 
 
 ## 🧪 Tecnologias Utilizadas
@@ -51,7 +51,6 @@ Estudante de Ciência da Computação - UFPB (Campus IV)
 
 - GitHub: [@Kaua-Vidal](https://github.com/Kaua-Vidal)
 - LinkedIn: [Seu LinkedIn aqui, se tiver]
-- Portfólio: [https://kaua-vidal.github.io/MyPortfolio](https://portfolio-kaua-vidal.netlify.app/)
 
 ## 📄 Licença
 
