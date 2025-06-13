@@ -16,6 +16,8 @@ let trilho = document.querySelector('div#trilho');
 let body = document.querySelector('body');
 
 trilho.addEventListener('click', () => {
-    trilho.classList.toggle('dark')
-    body.classList.toggle('dark')
+    trilho.classList.toggle('light')
+    body.classList.toggle('light')
+    h1.classList.toggle('light')
 })
+
