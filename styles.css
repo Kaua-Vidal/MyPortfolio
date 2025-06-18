@@ -9,6 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 :root {
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
@@ -146,6 +147,39 @@ h1 {
     font-size: 1.2rem;
 }
 
+.titulo-tecnologias {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container-tecnologias {
+    padding: 6rem;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: grid;
+    /*Flex para alinhar os itens*/
+    flex-wrap: wrap;
+    /*Permite que os itens se ajustem em várias linhas*/
+    margin: 0 auto;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+
+.imagem-tecnologias {
+    width: 8rem;
+    height: 8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.imagem-tecnologias:hover {
+    transform: scale(1.1);
+    /*Efeito de hover na imagem*/
+    transition: all 300ms ease-in-out;
+}
+
 .projetos {
     padding: 6rem 2rem;
 }
@@ -171,7 +205,7 @@ h1 {
     display: grid;
     /*Organiza os cards em grid*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /*Cria colunas que se repetem, utilizanod o "repeat". O "auto-fit" faz com que as colunas se ajustem automaticamente ao tamanho disponivel. E o "minmax" define o tamanho minimo que devem ocupar (300px) e o máximo (1fr, que corresponde a 1 fração de espaço disponível).*/
+    /*Cria colunas que se repetem, utilizando o "repeat". O "auto-fit" faz com que as colunas se ajustem automaticamente ao tamanho disponivel. E o "minmax" define o tamanho minimo que devem ocupar (300px) e o máximo (1fr, que corresponde a 1 fração de espaço disponível).*/
     gap: 2rem;
     max-width: 120rem;
     margin: 0 auto;
@@ -306,7 +340,7 @@ h1 {
     /*Deixa as partículas mais transparentes*/
     background:
         radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
-        radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%), var(--maisEscuro);
+        radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%), transparent;
 }
 
 @keyframes flutuar {
@@ -364,9 +398,15 @@ h1 {
     background-color: white;
 }
 
+.indicador-tema {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all 500ms ease-in-out;
+}
+
 
 body.light {
-    background: #9cd1f1;
+    background: #ccebff;
     color: #111827;
     transition: all 500ms ease-in-out;
 }
@@ -412,5 +452,10 @@ body.light .projeto-link-pagina {
 
 body.light .botao-form {
     background: linear-gradient(90deg, #3b3f72, #5c548a);
+}
+
+body.light .projetos-card {
+    background: rgba(255, 255, 255, 0.501);
+
 }
 
