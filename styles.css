@@ -459,3 +459,19 @@ body.light .projetos-card {
 
 }
 
+@media screen and (max-width:800px) {
+    .menu {
+        font-size: 14px;
+        gap: 5px;
+        justify-content: left;
+    }
+
+    .indicador-container {
+        transform: scale(0.9);
+    }
+
+    .img-tecnologias {
+        padding-left: 35px;
+    }
+}
+
