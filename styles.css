@@ -74,7 +74,8 @@ a {
     width: 0;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
     transition: width 300ms ease-in-out;
 }
@@ -222,10 +223,11 @@ h1 {
     transition: all 400ms ease;
     cursor: pointer;
     /*Muda o cursor para a mãozinha quando passar por cima do card*/
+    min-width: 600;
 }
 
 .projetos-imagem {
-    height: 20rem;
+    height: 15rem;
     width: 100%;
     object-fit: cover;
     /*Cobre todo o espaço do card*/
